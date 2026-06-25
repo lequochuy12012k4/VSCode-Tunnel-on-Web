@@ -47,8 +47,7 @@ proot-distro login ubuntu
 Trong môi trường Ubuntu, chạy:
 
 ```bash
-apt update
-apt install wget -y
+apt update && apt install wget -y
 ```
 
 ---
