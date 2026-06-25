@@ -109,7 +109,16 @@ proot-distro login ubuntu
 cd ~
 ./code tunnel
 ```
+## Termux tránh shutdown
 
+- Bật Acquire wakelock trên thanh thông báo của máy
+
+- Bật chạy nền ứng dụng Termux
+
+```bash
+adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent; /system/bin/device_config put activity_manager max_phantom_processes 2147483647"
+```
 ---
 
 ## Các lệnh cài đặt nhanh
