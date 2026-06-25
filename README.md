@@ -115,7 +115,7 @@ cd ~
 
 - Bật chạy nền ứng dụng Termux
 
-- Để tránh việc Termux shutdown trong lúc làm việc, tải file platform-tool.zip về máy rồi giải nén. Sau đó truy cập vào cmd của thư mục platform-tool rồi chạy các lệnh sau:
+- Để tránh việc Termux shutdown trong lúc làm việc, tải file platform-tools.zip về máy rồi giải nén. Sau đó truy cập vào cmd của thư mục platform-tools rồi chạy các lệnh sau:
 
 ```bash
 adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"
